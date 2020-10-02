@@ -53,9 +53,11 @@ class _RegisterState extends State<Register> {
 
           RaisedButton.icon(
               onPressed: () {
+                if(nameController.text!='' && numberController.text!='' &&addressController.text!=''){
                 User  user=User(name: nameController.text,
                     number: numberController.text,homeAddress: addressController.text);
                 Navigator.pushReplacementNamed(context,'home',arguments: user);
+                }
 
               },
               label: Text('Register',style:TextStyle(fontSize: 20, ))

@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_menu/Services/Food.dart';
@@ -24,7 +25,7 @@ class OrderState extends State<Order>
   {
    return Scaffold(
        backgroundColor: Colors.white,
-       appBar: AppBar(),
+       appBar: AppBar(title: Text('Order Menu'),centerTitle: true,),
             floatingActionButton:RaisedButton.icon(
                 label: Text('finish'),
                 icon: Icon(Icons.whatshot,),

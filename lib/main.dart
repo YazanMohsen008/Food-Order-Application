@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_menu/Pages/Home.dart';
+import 'package:food_menu/Pages/Order.dart';
 import 'Pages/Register.dart';
 
 void main() {
@@ -7,10 +9,10 @@ void main() {
       return Register();
     },
     'home': (context) {
-      return Container();
+      return Home();
     },
     'order': (context) {
-      return Container();
+      return Order();
     },
   }));
 }
